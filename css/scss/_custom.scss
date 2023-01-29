@@ -2,11 +2,71 @@
 Custom styles
 ========================================================================== */
 $accent-color: hsla(158.96, 50.32%, 70%, 1);
+$background: #303030;
 
 body {
-    background-color: #303030;
+    background-color: $background;
     font-family: 'Cormorant Garamond', serif;
     color: white
+}
+
+h1 {
+    color: $accent-color;
+    text-align: center;
+    font-size: calc(2.1* 1rem);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: blue solid 5px;
+
+    img {
+        aspect-ratio: 1;
+        width: 80px;
+    }
+
+    ul {
+        display: inline-flex;
+        border: red 5px solid;
+
+        li {
+            list-style-type: none;
+            padding: .5em;
+            a {
+                color: $accent-color;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+#services-page {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    main {
+        max-width: 800px;
+    }
+
+    main ul {
+        margin-left: 80px;
+        li {
+            list-style-type: circle;
+        }
+    }
+
+    .contact {
+        text-align: center;
+        p {
+            font-style: italic;
+        }
+    }
+
 }
 
 

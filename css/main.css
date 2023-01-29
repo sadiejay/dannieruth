@@ -123,9 +123,80 @@ body {
   color: white;
 }
 
+h1 {
+  color: hsl(158.96deg, 50.32%, 70%);
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: blue solid 5px;
+}
+nav img {
+  aspect-ratio: 1;
+  width: 80px;
+}
+nav ul {
+  display: inline-flex;
+  border: red 5px solid;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0.5em;
+}
+nav ul li a {
+  color: hsl(158.96deg, 50.32%, 70%);
+  text-decoration: none;
+}
+
+#services-page {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#services-page main {
+  max-width: 800px;
+}
+#services-page main ul {
+  margin-left: 80px;
+}
+#services-page main ul li {
+  list-style-type: circle;
+}
+#services-page .contact {
+  text-align: center;
+}
+#services-page .contact p {
+  font-style: italic;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+.btn {
+  border: none;
+  background-color: hsl(158.96deg, 50.32%, 70%);
+  cursor: pointer;
+  color: #303030;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  transition: 220ms all ease-in-out;
+  text-decoration: none;
+  border-radius: 300px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgba(140, 217, 190, 0.8);
+}
+
 /*
   Hide visually and from screen readers
  */

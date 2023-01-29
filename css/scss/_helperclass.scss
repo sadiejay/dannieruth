@@ -1,6 +1,31 @@
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+//    button / button like styles
+.btn {
+    border: none;
+    background-color: $accent-color;
+    cursor: pointer;
+    color: $background;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.75em;
+    min-width: 10ch;
+    min-height: 44px;
+    text-align: center;
+    transition: 220ms all ease-in-out;
+    text-decoration: none;
+    border-radius: 300px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: scale-color($accent-color, $alpha: -20%);
+    }
+}
+
+
 /*
   Hide visually and from screen readers
  */
